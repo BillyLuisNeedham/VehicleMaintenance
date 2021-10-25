@@ -10,3 +10,4 @@ rootProject.name = "Vehicle Maintenance"
 include ':presentation'
 include ':domain'
 include ':data'
+enableFeaturePreview("VERSION_CATALOGS")

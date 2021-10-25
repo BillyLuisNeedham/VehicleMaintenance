@@ -1,0 +1,22 @@
+[versions]
+applicationId = "com.billyluisneedham.vehiclemaintenance"
+compileSdk = "31"
+minSdk = "26"
+targetSdk = "31"
+versionCode = "1"
+versionName = "1.0.1"
+
+kotlin = "1.5.31"
+android-gradlePlugin = "7.0.3"
+
+androidX-core = "1.6.0"
+compose = "1.0.4"
+
+[libraries]
+android-gradlePlugin = { module = "com.android.tools.build:gradle", version.ref = "android-gradlePlugin" }
+androidX-core = { module = "androidx.core:core-ktx", version.ref = "androidX-core"}
+kotlin-gradlePlugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+
+
+[bundles]
+
