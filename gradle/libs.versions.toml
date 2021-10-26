@@ -8,23 +8,32 @@ versionName = "1.0.1"
 
 kotlin = "1.5.31"
 
-android-gradlePlugin = "7.0.3"
 androidX-appcompat = "1.3.1"
 androidX-core = "1.6.0"
+androidX-junit = "1.1.3"
+android-gradlePlugin = "7.0.3"
+androidX-lifecycle = "2.3.1"
 compose = "1.0.4"
+composeActivity = "1.4.0-rc01"
+junit = "4.13.2"
 material = "1.4.0"
 
 [libraries]
 android-gradlePlugin = { module = "com.android.tools.build:gradle", version.ref = "android-gradlePlugin" }
 
-androidX-core = { module = "androidx.core:core-ktx", version.ref = "androidX-core" }
 androidX-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "androidX-appcompat" }
+androidX-core = { module = "androidx.core:core-ktx", version.ref = "androidX-core" }
+androidX-lifecycle = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "androidX-lifecycle" }
+androidX-junit = { module = "androidx.test.ext:junit", version.ref = "androidX-junit" }
 
-compose-ui = { module = "androidx.compose.ui:ui", version.ref = "compose" }
+compose-activity = { module = "androidx.activity:activity-compose", version.ref = "composeActivity" }
 compose-material = { module = "androidx.compose.material:material", version.ref = "compose" }
-compose-uiPreview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose" }
 compose-junit = { module = "androidx.compose.ui:ui-test-junit4", version.ref = "compose" }
+compose-ui = { module = "androidx.compose.ui:ui", version.ref = "compose" }
+compose-uiPreview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose" }
 compose-uiTooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose" }
+
+junit = { module = "junit:junit", version.ref = "junit" }
 
 kotlin-gradlePlugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
 
@@ -34,10 +43,13 @@ material = { module = "com.google.android.material:material", version.ref = "mat
 
 androidX = [
     "androidX-core",
-    "androidX-appcompat"
+    "androidX-appcompat",
+    "androidX-lifecycle"
 ]
+
 compose = [
-    "compose-ui",
+    "compose-activity",
     "compose-material",
+    "compose-ui",
     "compose-uiPreview"
 ]
